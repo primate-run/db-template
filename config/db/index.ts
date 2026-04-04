@@ -1,2 +1,5 @@
 import sqlite from "@primate/sqlite";
-export default sqlite();
+
+const db = sqlite({ database: "./data.db" });
+
+export default db;
